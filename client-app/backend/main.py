@@ -33,7 +33,7 @@ logger = logging.getLogger(__name__)
 # How long one scan may run before the API gives up and tells the frontend.
 # Keep this BELOW the frontend's 120 second axios timeout so the user sees our
 # message instead of a generic "timeout" error.
-SCAN_TIMEOUT_SECONDS = float(os.getenv("SCAN_TIMEOUT_SECONDS", "90"))
+SCAN_TIMEOUT_SECONDS = float(os.getenv("SCAN_TIMEOUT_SECONDS", "210"))
 
 # Set AUDIO_WARMUP=1 to load the audio libraries/models in the background when
 # the server starts, so the first audio scan is fast. Off by default because it
